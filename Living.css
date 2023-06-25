@@ -1,0 +1,267 @@
+html, body {
+    background-color: #D6CCC0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #ffffff6c;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navKontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;  
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links > li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 50px;   
+
+}
+
+.ikonice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+}
+
+.fa {
+    text-decoration: none;
+    color: black;   
+}
+.Jezici { 
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Playfair Display", serif;
+}
+
+.eng{
+    text-decoration: underline #ffffff 1.2px;
+
+    
+}
+
+.srp{
+    text-decoration: underline #ffffff 1.2px;
+}
+
+.underline{
+    text-decoration: underline #ffffff 1.2px;
+}
+
+.glass{
+    margin-top: 150px;
+    width: 450px;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.57);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.0px);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(6px)
+}
+.Hero{
+    background-image: url("./images/living3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 700px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+}
+
+
+.Footer{
+    background-color: #ffffff70;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.FooterKontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;  
+}
+
+.designQ{
+    align-self: center;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+
+.PostImage{
+    width: 270px;
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -10px;
+}
+
+.Img5{
+    background-image: url("./images/5.0.jpg");
+}
+.Img6{
+    background-image: url("./images/6.jpg");
+}
+.Img8{
+    background-image: url("./images/gift.jpg");
+}
+.Img9{
+    background-image: url("./images/gift2.jpg");
+}
+
+
+.Posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin-inline: auto;
+    gap: 20px;
+    place-items: center;
+    
+}
+
+.Post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.Post1Text {
+    width: 270px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.ZaSliku > img{
+    width: 250px;
+    transform: translate(-10%, 7%);
+}
+
+.ZaSliku {
+    border: 1.2px solid white;    
+    width: fit-content;
+    margin: 20px;
+}
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.AboutUsText{
+    display: flex;
+    flex-direction: column;
+}
+.a{
+    font-size: 23px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    padding-bottom: 40px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+.AboutUsText1{
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    width: 500px;
+}   
+
+.quote1{
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: 40px;
+}

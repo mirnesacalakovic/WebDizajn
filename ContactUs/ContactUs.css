@@ -1,0 +1,246 @@
+html, body {
+    background-color: #D6CCC0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #ffffff6c;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navKontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;  
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links > li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 50px;   
+
+}
+
+.ikonice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+}
+
+.fa {
+    text-decoration: none;
+    color: black;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.Jezici { 
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Playfair Display", serif;
+}
+
+.eng{
+    text-decoration: underline #ffffff 1.2px;
+    
+}
+
+.srp{
+    text-decoration: underline #ffffff 1.2px;
+}
+.underline{
+    text-decoration: underline #ffffff 1.2px;
+}
+
+
+.HeroSection{
+    background-image: url("./images/out4.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+.HeroText{
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+
+.glass{
+    margin-top: 40px;
+    width: 500px;
+    height: 520px;
+    background: rgba(0, 0, 0, 0.57);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter: blur(6px);
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+.Footer{
+    background-color: #ffffff70;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.FooterKontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;  
+}
+
+
+.ZaSliku > img{
+    width: 250px;
+    transform: translate(-10%, 7%);
+}
+
+.ZaSliku {
+    border: 1.2px solid white;    
+    width: fit-content;
+    margin: 20px;
+}
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.AboutUsText{
+    display: flex;
+    flex-direction: column;
+}
+.a{
+    font-size: 23px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    padding-bottom: 40px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+.AboutUsText1{
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    width: 500px;
+}   
+
+.quote1{
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: 40px;
+}
+
+.nesSimpa, .nesSimpa:focus,
+.nesSimpa:active {
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: #ffffff 1.2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 240px;
+    color: #ffffff;
+    outline: none;
+}
+
+.nesSimpa::placeholder {
+    font-size: 12px;
+}
+
+.textDiv > textarea {
+    resize: none;
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    background-color: transparent;
+    
+    border: #ffffff 1.2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 240px;
+    color: #ffffff;
+    outline: none;
+    height: 100px;
+}
