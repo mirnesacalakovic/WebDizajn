@@ -6,7 +6,7 @@ var interval = setInterval(function () {
     count--;
     countSpan.innerHTML = count;
     if (count === 0) {
-        window.location.href = "../homepage.html";
+        window.location.href = "../index.html";
         clearInterval(interval);
     }
 }, 1000);
