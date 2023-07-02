@@ -50,7 +50,6 @@ form.addEventListener("submit", Validacija);
 
 for (let i = 0; i < form.length-1; i++) {
     const formElement = form[i];
-    console.log(`${formElement.name}HelperText`);
     formElement.addEventListener("focusin", function(e){
         document.getElementById(`${formElement.name}HelperText`).style.display="block";
         document.getElementById(`${formElement.name}ErrorText`).style.display="none";
