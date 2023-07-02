@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decor Blog Design</title>
     <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +16,12 @@
     <nav class="navbar">
         <div class="navKontainer">
             <ul class="nav-links">
-                <li><a href="sDesign.html" class="nav-links">DIZAJN</a></li>
-                <li><a href="sLiving.html" class="nav-links">ŽIVOT</a></li>
-                <li><a href="sContactUs.html" class="nav-links underline">KONTAKT</a></li>
+                <li><a href="../Design/sDesign.html" class="nav-links">DIZAJN</a></li>
+                <li><a href="../Living/sLiving.html" class="nav-links">ŽIVOT</a></li>
+                <li><a href="#" class="nav-links underline">KONTAKT</a></li>
             </ul>
             
-            <a href="sHomepage.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <a href="../sHomepage.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
             
             <div class="ikonice">
                 <a href="www.fabecook.com" class="fa fa-facebook"></a>
@@ -35,7 +36,50 @@
     <div class="HeroSection">
         <div class="glass">
             <p>KONTAKTIRAJTE NAS</p>
+            <form action="#" id="form">
+                <div class="inputDiv">
+                    <input type="text" id="nameId" class="nesSimpa" name="firstName" autocomplete="off" placeholder="Ime">
+                    <div id="firstNameHelperText" class="helperTextContainer">
+                        <p class="helperText">• Sva slova moraju biti velika.</p>
+                    </div>
+                    <div id="firstNameErrorText" class="errorTextContainer">
+                        <p class="errorText">Sva slova moraju biti velika!</p>
+                    </div>
+                </div>
 
+                <div class="inputDiv">
+                    <input type="text" id="lastNameId" class="nesSimpa" name="lastName" autocomplete="off" placeholder="Prezime">
+                    <div id="lastNameHelperText" class="helperTextContainer">
+                        <p class="helperText">• Sva slova moraju biti velika.</p>
+                    </div>
+                    <div id="lastNameErrorText" class="errorTextContainer">
+                        <p class="errorText">Sva slova moraju biti velika!</p>
+                    </div>
+                </div>
+
+                <div class="inputDiv">
+                    <input type="text" id="emailId" class="nesSimpa" name="email" autocomplete="off" placeholder="Email">
+                    <div id="emailHelperText" class="helperTextContainer">
+                        <p class="helperText">• Email mora biti u formatu: "exmp@example.com"</p>
+                    </div>
+                    <div id="emailErrorText" class="errorTextContainer">
+                        <p class="errorText">Email mora biti u formatu: "exmp@example.com"!</p>
+                    </div>
+                </div>
+
+                <div class="textDiv">
+                    <textarea name="message" id="textId" autocomplete="off" rows="5" cols="33" placeholder="Napišite poruku...">
+                    </textarea>
+                    <div id="messageHelperText" class="helperTextContainer">
+                        <p class="helperText">• Poruka mora da sadrži samo ispravne rečenice.</p>
+                    </div>
+                    <div id="messageErrorText" class="errorTextContainer">
+                        <p class="errorText">Poruka mora da sadrži samo ispravne rečenice!</p>
+                    </div>
+                </div>
+
+                <button class="button-30" role="button" type="submit">POŠALJI</button>
+            </form>
         </div>
     </div>
 
@@ -65,7 +109,7 @@
                 Nadamo se da ćete uživati u našem blogu i da vam je od pomoći. Ako imate bilo kakvih pitanja ili komentara, slobodno nas kontaktirajte. Voleli bismo da čujemo od vas!</p>
         </div>
         <div class="ZaSliku">
-            <img src="./images/aboutUs.jpg" alt="We">
+            <img src="../images/aboutUs.jpg" alt="We">
         </div>
     </div>
     
@@ -73,10 +117,10 @@
     <div class="Footer">
         <div class="FooterKontainer">
             <div class="FooterLogo">
-                <img src="./images/logo.png" alt="logo" class="logo">
+                <img src="../images/logo.png" alt="logo" class="logo">
             </div>
             <div class="FooterText">
-                <p>© 2021 Decor Blog Design. All rights reserved.</p>
+                <p>© 2021 Decor Blog Design. Sva prava sadržana.</p>
             </div>
             <div class="ikonice">
                 <a href="www.fabecook.com" class="fa fa-facebook"></a>
@@ -85,6 +129,6 @@
             </div>
         </div>  
     
-
+        <script src="./sValidation.js"></script>
 </body>
 </html>

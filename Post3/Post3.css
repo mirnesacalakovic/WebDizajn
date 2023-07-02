@@ -88,7 +88,7 @@ html, body {
 
 
 .newBlogPost{
-    background-image: url("./images/3.0.1.jpg");
+    background-image: url("../images/3.0.1.jpg");
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -291,13 +291,13 @@ hr{
 }
 
 .Img1{
-    background-image: url("./images/ppp.png");
+    background-image: url("../images/ppp.png");
 }
 .Img2{
-    background-image: url("./images/bookshelf2.jpg");
+    background-image: url("../images/bookshelf2.jpg");
 }
 .Img3{
-    background-image: url("./images/1.3.1.jpg");
+    background-image: url("../images/1.3.1.jpg");
 }
 .Posts{
     display: grid;

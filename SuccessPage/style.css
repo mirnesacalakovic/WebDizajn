@@ -1,0 +1,55 @@
+.HeroSection{
+    background-image: url("../images/success.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+.HeroText{
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin: 20px;
+}
+.HeroText1{
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin: 20px;
+}
+
+
+.glass{
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.57);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter: blur(6px)
+}
+
+@media screen and (max-width: 900px){
+    .HeroText{
+        font-size: 30px;
+    }
+    .HeroText1{
+        font-size: 20px;
+    }
+    .HeroSection{
+        width: 100%;
+    }
+    .glass{
+        width: 80%;
+    }
+}
+    

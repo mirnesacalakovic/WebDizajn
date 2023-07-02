@@ -16,11 +16,11 @@ html, body {
     align-items: center;
     padding: 5px 0px;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.263);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgb(0, 0, 0);
     z-index: 100;
     position: absolute;
     top: 0;
@@ -79,7 +79,6 @@ html, body {
 
 .eng{
     text-decoration: underline #ffffff 1.2px;
-
     
 }
 
@@ -87,43 +86,167 @@ html, body {
     text-decoration: underline #ffffff 1.2px;
 }
 
-.underline{
-    text-decoration: underline #ffffff 1.2px;
+.newBlogPost{
+    background-image: url("../images/NewPost.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
 }
-
+.newTitle{
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 50px;
+} 
 .glass{
     margin-top: 150px;
     width: 450px;
-    height: fit-content;
     background: rgba(0, 0, 0, 0.57);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.0px);
-    border-radius: 10px;
     -webkit-backdrop-filter: blur(6px)
-}
-.Hero{
-    background-image: url("./images/living3.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 90vh;
-    font-family: "Playfair Display", serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
 }
 
 hr{
-    width: 700px;
-    border: 1px solid #ffffff;
-    margin: 0 auto;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
 }
 
+.uvodniText{
+    margin-left: 150px;
+    text-align: justify;
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+.prviDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.slika{
+    height: 300px;
 
+}
+ 
+.slika1 > img{
+    width: 250px;
+    transform: translate(-10%, -6%);
+    
+}
+.slika1{
+    border: 1.2px solid white;    
+    width: fit-content;
+    margin: 20px;
+}
+.pText1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    width: 630px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.naslov{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline #ffffff;
+}
+.text1{
+    margin-bottom: 70px;
+}
+.pText2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    width: 570px;
+    margin-right: 25px;
+    text-align: justify;
+}
+.n2{
+   padding-bottom: 30px; 
+   margin-right: 20px;
+}
+.s2{
+    margin-left: 40px;
+}
+.tekstovi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.pT3{
+    margin-bottom: 20px;
+}
+.Interest{
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Playfair Display, serif;
+    font-size: 16px;
+}
+.PostImage{
+    width: 270px;
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -10px;
+}
+
+.Img1{
+    background-image: url("../images/bookshelf2.jpg");
+}
+.Img2{
+    background-image: url("../images/1.3.jpg");
+}
+.Img3{
+    background-image: url("../images/3.0.jpg");
+}
+.Posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-inline: auto;
+    gap: 20px;
+    place-items: center;
+}
+
+.Post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.Post1Text {
+    width: 270px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.Post1Text > a{
+    text-decoration: none;
+    color: black;
+}
 .Footer{
     background-color: #ffffff70;
     font-size: 12px;
@@ -143,125 +266,7 @@ hr{
     width: 75%;  
 }
 
-.designQ{
-    align-self: center;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0;
-    padding: 30px;
-    padding-bottom: 50px;
-}
 
 
-.PostImage{
-    width: 270px;
-    height: 340px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: -10px;
-}
-
-.Img5{
-    background-image: url("./images/5.0.jpg");
-}
-.Img6{
-    background-image: url("./images/6.jpg");
-}
-.Img8{
-    background-image: url("./images/gift.jpg");
-}
-.Img9{
-    background-image: url("./images/gift2.jpg");
-}
 
 
-.Posts{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 75%;
-    margin-inline: auto;
-    gap: 20px;
-    place-items: center;
-    
-}
-
-.Post{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    height: 100%;
-}
-
-.Post1Text {
-    width: 270px;
-    font-size: 14px;
-    text-decoration: none;
-    color: black;
-}
-
-.ZaSliku > img{
-    width: 250px;
-    transform: translate(-10%, 7%);
-}
-
-.ZaSliku {
-    border: 1.2px solid white;    
-    width: fit-content;
-    margin: 20px;
-}
-.AboutUs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-    margin-inline: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 20px;
-}
-.AboutUsText{
-    display: flex;
-    flex-direction: column;
-}
-.a{
-    font-size: 23px;
-    font-family: "Playfair Display", serif;
-    color: white;
-    padding: 0 20px;
-    text-decoration: none;
-    padding-bottom: 40px;
-    align-self: flex-end;
-    margin-right: 30px;
-}
-
-.AboutUs{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    margin-inline: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 30px;
-}
-.AboutUsText1{
-    font-family: "Montserrat", serif;
-    font-size: 12px;
-    width: 500px;
-}   
-
-.quote1{
-    font-size: 18px;
-    font-family: "Playfair Display", serif;
-    color: white;
-    padding: 0 20px;
-    text-align: center;
-    padding-bottom: 0px;
-    margin: 40px;
-}

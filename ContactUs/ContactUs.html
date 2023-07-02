@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decor Blog Design</title>
     <link rel="stylesheet" href="./ContactUs.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +16,12 @@
     <nav class="navbar">
         <div class="navKontainer">
             <ul class="nav-links">
-                <li><a href="Design.html" class="nav-links">DESIGN</a></li>
-                <li><a href="#" class="nav-links">LIVING</a></li>
-                <li><a href="ContactUs.html" class="nav-links underline">CONTACT US</a></li>
+                <li><a href="../Design/Design.html" class="nav-links">DESIGN</a></li>
+                <li><a href="../Living/Living.html" class="nav-links">LIVING</a></li>
+                <li><a href="#" class="nav-links underline">CONTACT US</a></li>
             </ul>
             
-            <a href="homepage.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <a href="../homepage.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
             
             <div class="ikonice">
                 <a href="www.fabecook.com" class="fa fa-facebook"></a>
@@ -35,51 +36,52 @@
     <div class="HeroSection">
         <div class="glass">
             <p>CONTACT US</p>
-            <form action="#" class="forma">
+            <form action="#" id="form">
                 <div class="inputDiv">
-                    <input type="text" class="nesSimpa" name="firstName" autocomplete="off" placeholder="Name">
-                    <p id="firstNameErrorText"></p>
+                    <input type="text" id="nameId" class="nesSimpa" name="firstName" autocomplete="off" placeholder="Name">
+                    <div id="firstNameHelperText" class="helperTextContainer">
+                        <p class="helperText">• All letters must be uppercase.</p>
+                    </div>
+                    <div id="firstNameErrorText" class="errorTextContainer">
+                        <p class="errorText">All letters must be uppercase!</p>
+                    </div>
                 </div>
 
                 <div class="inputDiv">
-                    <input type="text" class="nesSimpa" name="lastName" autocomplete="off" placeholder="Lastname">
-                    <p id="lastNameErrorText"></p>
+                    <input type="text" id="lastNameId" class="nesSimpa" name="lastName" autocomplete="off" placeholder="Lastname">
+                    <div id="lastNameHelperText" class="helperTextContainer">
+                        <p class="helperText">• All letters must be uppercase.</p>
+                    </div>
+                    <div id="lastNameErrorText" class="errorTextContainer">
+                        <p class="errorText">All letters must be uppercase!</p>
+                    </div>
                 </div>
 
                 <div class="inputDiv">
-                    <input type="text" class="nesSimpa" name="email" autocomplete="off" placeholder="Email">
-                    <p id="emailErrorText"></p>
+                    <input type="text" id="emailId" class="nesSimpa" name="email" autocomplete="off" placeholder="Email">
+                    <div id="emailHelperText" class="helperTextContainer">
+                        <p class="helperText">• Email has to be in format: "exmp@example.com"</p>
+                    </div>
+                    <div id="emailErrorText" class="errorTextContainer">
+                        <p class="errorText"> Email has to be in format: "exmp@example.com"!</p>
+                    </div>
                 </div>
 
                 <div class="textDiv">
-                    <textarea name="message" autocomplete="off" rows="5" cols="33" placeholder="Type something...">
+                    <textarea name="message" id="textId" autocomplete="off" rows="5" cols="33" placeholder="Type something...">
                     </textarea>
-                    <p id="messageErrorText"></p>
+                    <div id="messageHelperText" class="helperTextContainer">
+                        <p class="helperText">• Message has to contain only correct sentences.</p>
+                    </div>
+                    <div id="messageErrorText" class="errorTextContainer">
+                        <p class="errorText">Message has to contain only correct sentences!</p>
+                    </div>
                 </div>
 
-                <button type="submit">SUBMIT</button>
+                <button class="button-30" role="button" type="submit">SUBMIT</button>
             </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <br>
@@ -102,7 +104,7 @@
                 We hope you enjoy our blog and find it helpful. If you have any questions or comments, please feel free to contact us. We would love to hear from you!</p>
         </div>
         <div class="ZaSliku">
-            <img src="./images/aboutUs.jpg" alt="We">
+            <img src="../images/aboutUs.jpg" alt="We">
         </div>
     </div>
     
@@ -111,7 +113,7 @@
     <div class="Footer">
         <div class="FooterKontainer">
             <div class="FooterLogo">
-                   <img src="./images/logo.png" alt="logo" class="logo">
+                   <img src="../images/logo.png" alt="logo" class="logo">
             </div>
             <div class="FooterText">
                 <p>© 2021 Decor Blog Design. All rights reserved.</p>
@@ -127,6 +129,6 @@
 
 
 
-    <script src="./validacija.js"></script>
+    <script src="./validation.js"></script>
 </body>
 </html>
