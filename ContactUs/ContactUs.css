@@ -25,6 +25,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
+
 }
 .navKontainer{
     display: flex;
@@ -128,6 +129,7 @@ a{
     -webkit-backdrop-filter: blur(6px);
     font-family: "Playfair Display", serif;
     font-size: 30px;
+    margin-top: 70px;
 }
 
 .Footer{
@@ -267,7 +269,7 @@ a{
 
 .helperText {
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
     text-align: left;
     margin-bottom: 10px;
     font-family: "Montserrat", serif;
@@ -327,7 +329,7 @@ a{
 .errorText {
     color: #DB0000;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
     text-align: left;
     margin-bottom: 10px;
     font-family: "Montserrat", serif;
